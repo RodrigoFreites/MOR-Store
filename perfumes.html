@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOR Store</title>
+
+    <!-- bulma css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- my style -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+    <header>
+
+    <div class="header-1">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> MOR Store </a>
+
+        <div class="form-container">
+            <form action="">
+                <input type="search" placeholder="Buscar" id="search" /> 
+                <label for="search" class="fas fa-search"></label>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="header-2">
+
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbarr">
+            <ul>
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="#deal">Productos</a></li>
+                <li><a href="#featured">Destacados</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fas fa-heart"></a>
+            <a href="#" id="btn_carrito" class="fas fa-shopping-cart"></a>
+            <a href="account.html" class="fas fa-user"></a>
+        </div>
+
+    </div>
+
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- modal section start-->
+
+    <div class="modal" id="modal">
+        <div class="modal-background toggle"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Carrito</p>
+                <button type="button" name="button" class="delete toggle"></button>
+            </header>
+            <section class="modal-card-body">
+                <div class="columns" id="productosCarrito-header">
+                    <div class="column is-3 has-text-centered">Producto</div>
+                    <div class="column is-3 has-text-centered">Nombre</div>
+                    <div class="column is-2 has-text-centered">Precio</div>
+                    <div class="column is-1 has-text-centered">Cant</div>
+                    <div class="column is-2 has-text-centered">Total</div>
+                    <div class="column is-1 has-text-centered">Quitar</div>
+                </div>
+                <div id="productosCarrito">
+                    <!-- PRODUCTOS AGREGADOS AL CARRITO -->
+    
+                </div>
+                <div class="columns">
+                    <div class="column is-9 has-text-right">
+                        <h1 class="title">TOTAL: </h1>
+                    </div>
+                    <div class="column is-3 has-text-centered">
+                        <p class="title is-3" id="totalCarrito"><strong>$0</strong></p>
+                    </div>
+                </div>
+            </section>
+            <footer class="modal-card-foot">
+                <a href="#" class="button is-success">Comprar</a>
+                <a href="#" class="button toggle">Cerrar</a>
+            </footer>
+        </div>
+    </div>
+
+    <!-- modal section end-->
+
+
+    <!-- market section start -->
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline" id="catalogo">
+
+            </div>
+
+        
+        </div>
+    </section>
+    
+    <!-- market section end -->
+    
+    <!-- footer section starts  -->
+
+    <section class="footerr">
+
+        <div class="boxx-container">
+
+            <div class="boxx">
+                <a href="#" class="logo"> <i class="fas fa-shopping-bag"></i> MOR Store </a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique expedita molestiae distinctio facere beatae velit, maiores ullam molestias necessitatibus sapiente.</p>
+            </div>
+
+            <div class="boxx">
+                <h3>links</h3>
+                <a href="#home">Home</a>
+                <a href="#deal">Productos</a>
+                <a href="#featured">Destacados</a>
+            </div>
+
+            <div class="boxx">
+                <h3>Contacto</h3>
+                <p> <i class="fas fa-home"></i>
+                    Jose C Paz, Buenos Aires, 
+                    Argentina 
+                </p>
+                <p> <i class="fas fa-phone"></i>
+                    +54 110430430
+                </p>
+                <p> <i class="fas fa-globe"></i>
+                    morstore@gmail.com
+                </p>
+            </div>
+
+        </div>
+
+    <h1 class="credit"> Creado por <span>Rodrigo Freites</span> | all rights reserved. </h1>
+
+    </section>
+
+    <!-- footer section ends -->
+
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- owl carousel js file cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="JS/main.js"></script>
+    <script src="JS/account.js"></script>
+    <script src="JS/carrito.js"></script>
+
+    
+</body>
+</html>
